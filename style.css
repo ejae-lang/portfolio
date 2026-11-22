@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+body{
+    background-color: black;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 4rem 15%;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+#menu-icon{
+    font-size: 3.5rem;
+    color: #2fe282;
+    display: none;
+}
+span{
+    background: linear-gradient(
+        270deg,
+        #2fe282 10%,
+        #2fe2cd 100%
+    );
+    background-clip: text;
+    color: transparent;
+}
+.navbar a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 50px; 
+    transition: 0.3s ease;
+}
+.navbar a:hover{
+    color: #2fe282;
+    background-color: whitesmoke;
+}
+.info{
+    font-size: 1.8rem;
+    padding: 2rem 2rem;
+    border-radius: 3rem;
+    background: linear-gradient(
+        270deg,
+        #2fe282 10%,
+        #2fe2cd 100%
+    );
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    color: white;
+    border: none;
+    text-wrap: nowrap;
+}
+.info:hover{
+    transform: scale(1.05);
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 15%;
+}
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+.home-content h1{
+    font-size: 6rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    line-height: 1;
+    color: white;
+}
+.home-content h3{
+    margin: 1rem 0;
+    font-size: 3rem;
+    color: white;
+}
+.home-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.home-img img{
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #2fe282;
+    transition: 0.4s ease-in-out;
+}
+.home-img img:hover{
+    box-shadow: 0 0 25px #2fe282,
+                0 0 50px #2fe282,
+                0 0 100px #2fe282;
+}
+.socials a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding: 1rem;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #2fe282;
+    margin: 3rem 0.5rem;
+    transition: 0.3 ease-in-out;
+}
+.socials a:hover {
+    color: white;
+    background-color: #2fe282;
+    transform: scale(1) translateY(-3px);
+    box-shadow: 0 0 25px #2fe282;
+}
+.btn-aboutme{
+    display: inline-block;
+    font-size: 1.8rem;
+    padding: 2rem 3rem;
+    border-radius: 3rem;
+    background: linear-gradient(
+        270deg,
+        #2fe282 10%,
+        #2fe2cd 100%
+    );
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    color: white;
+    border: none;
+    text-wrap: nowrap;
+    text-align: center;
+}
+.btn-aboutme:hover{
+    color: white;
+    background-color: #2fe282;
+    transform: scale(1) translateY(-3px);
+    box-shadow: 0 0 25px #2fe282;
+}
