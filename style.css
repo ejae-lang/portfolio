@@ -296,3 +296,71 @@ section{
     margin-top: 40px;
     font-size: 16px;
 }
+@media(max-width: 1285px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3rem;
+        background: black;
+        border-bottom-right-radius: 2rem;
+        border-left: 2px solid #2fe282;
+        border-bottom: 2px solid #2fe282;
+        display: none;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: white;
+    }
+    .navbar.active{
+        display: block;
+    }
+    .gradient-btn{
+        display: none;
+    }
+    .home{
+        flex-direction: column-reverse;
+        margin: 5rem 0;
+        gap: 1.5rem;
+    }
+    .home-content{
+        align-items: center;
+        text-align: center;
+        margin-top: -3rem;
+    }
+    .home-img{
+        width: 56vw;
+        margin-bottom: -4rem;
+    }
+
+    .about{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .about h1{
+        text-align: center;
+        margin: 2rem 0;
+    }
+    .about img{
+        width: 52vw;
+    }
+    .about-content p{
+        text-align: justify;
+    }
+    .skills-container{
+        width: 25;
+    }
+    .skills-info{
+        text-align: justify;
+    }
+    .contact form{
+        flex-direction: column;
+    }
+
+}
