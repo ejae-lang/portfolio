@@ -47,6 +47,9 @@ span{
     padding: 8px 16px;
     border-radius: 50px; 
     transition: 0.3s ease;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 .navbar a:hover{
     color: #2fe282;
@@ -67,6 +70,9 @@ span{
     color: white;
     border: none;
     text-wrap: nowrap;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 .info:hover{
     transform: scale(1.05);
@@ -93,11 +99,17 @@ section{
     margin-top: 1.5rem;
     line-height: 1;
     color: white;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
 }
 .home-content h3{
     margin: 1rem 0;
     font-size: 3rem;
     color: white;
+     opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
 }
 .home-img {
   display: flex;
@@ -126,7 +138,10 @@ section{
     background: transparent;
     border: 2px solid #2fe282;
     margin: 3rem 0.5rem;
-    transition: 0.3 ease-in-out;
+    transition: 0.3 ease;
+    opacity: 0;
+    animation: slideLeft 1.2s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 .socials a:hover {
     color: white;
@@ -151,6 +166,9 @@ section{
     border: none;
     text-wrap: nowrap;
     text-align: center;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: 1.2s;
 }
 .btn-aboutme:hover{
     color: white;
@@ -363,4 +381,44 @@ section{
         flex-direction: column;
     }
 
+}
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
