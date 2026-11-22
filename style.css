@@ -188,3 +188,60 @@ section{
     line-height: 1.9;
     color: white;
 }
+.heading{
+    text-align: center;
+    font-size: 6rem;
+    margin: 3rem 0;
+}
+.skills {
+    background-color: black;
+    color: white;
+}
+.skills h2{
+    color: white;
+}
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: center;
+    gap: 3rem;
+}
+.skills-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2fe282;
+    height: 500px;
+    border-radius: 15%;
+    cursor: pointer;
+    border: 5px solid-transparent;
+    transform: 0.4s ease-in-out
+}
+.skills-box:hover{
+    background: black;
+    color: #2fe282;
+    border: 5px solid #2fe282;
+    transition: scale(1);
+}
+.skills-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    text-align: justify;
+}
+.skills-info h4{
+    font-size: 3rem;
+    margin: 2rem 0;
+    font-weight: 600;
+}
+.skills-info p{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.7;
+}
+.skills-info i{
+    font-size: 7rem;
+}
